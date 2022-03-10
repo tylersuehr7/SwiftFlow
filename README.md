@@ -4,7 +4,7 @@ Simplistic hot and cold flow-based reactive observer pattern for Swift… ideal 
 
 ### Using a cold-flow (emits value only when active observers)
 ```swift
-let value = MutableFlow<String>("")
+let value = Flow<String>("")
 value.emit("Hello, World!")
 
 value.observe { print($0) }
@@ -19,7 +19,7 @@ value.emit("Hello, World 3!")
 
 ### Using a hot-flow (emits value even when no active observers)
 ```swift
-let value = MutableStateFlow<String>("")
+let value = StateFlow<String>("")
 value.emit("Hello, World!")
 
 value.observe { print($0) }
