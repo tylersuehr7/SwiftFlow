@@ -7,7 +7,7 @@
 
 /// Parent class for any component whose underlying value can be observered.
 public class Visitor<T>: Visitable {
-    fileprivate var nextItem: Visitable?
+    internal var nextItem: Visitable?
     
     /// Subclasses should override this function.
     internal func visit(_ value: Any, oldValue: Any?) {
