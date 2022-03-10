@@ -2,6 +2,7 @@
 //  StateFlow.swift
 //  SwiftFlow
 //
+//  Copyright © Tyler Suehr 2022
 //  Created by Tyler Suehr on 3/10/22.
 //
 
